@@ -1,0 +1,1605 @@
+{
+  "$schema": "https://raw.githubusercontent.com/pin-node/PinNode/main/tools/pinnode_gen/pinnode-game.schema.json",
+  "manifestVersion": 1,
+  "ruleset": {
+    "id": "strange-science-rpu",
+    "title": "strange-science",
+    "name": "Strange Science (RPU)",
+    "version": "0.2.3",
+    "scoringVersion": 1,
+    "platform": "bally-6803"
+  },
+  "players": {
+    "max": 4
+  },
+  "switches": [
+    {
+      "n": 0,
+      "name": "Right Outlane"
+    },
+    {
+      "n": 1,
+      "name": "Left Outlane"
+    },
+    {
+      "n": 2,
+      "name": "Exit Anti-Gravity"
+    },
+    {
+      "n": 3,
+      "name": "Enter Anti-Gravity"
+    },
+    {
+      "n": 4,
+      "name": "Button Left"
+    },
+    {
+      "n": 5,
+      "name": "Credit"
+    },
+    {
+      "n": 6,
+      "name": "Button Right"
+    },
+    {
+      "n": 7,
+      "name": "Outhole"
+    },
+    {
+      "n": 8,
+      "name": "Coins Right"
+    },
+    {
+      "n": 9,
+      "name": "Coins Left"
+    },
+    {
+      "n": 10,
+      "name": "Coins Middle"
+    },
+    {
+      "n": 11,
+      "name": "Left Bubble Lane"
+    },
+    {
+      "n": 12,
+      "name": "Right Bubble Lane"
+    },
+    {
+      "n": 13,
+      "name": "Slam"
+    },
+    {
+      "n": 14,
+      "name": "Tilt"
+    },
+    {
+      "n": 16,
+      "name": "Science Target Top"
+    },
+    {
+      "n": 17,
+      "name": "Science Target Middle"
+    },
+    {
+      "n": 18,
+      "name": "Science Target Bottom"
+    },
+    {
+      "n": 19,
+      "name": "Strange Target Top"
+    },
+    {
+      "n": 20,
+      "name": "Strange Target Middle"
+    },
+    {
+      "n": 21,
+      "name": "Strange Target Bottom"
+    },
+    {
+      "n": 24,
+      "name": "Return Lanes"
+    },
+    {
+      "n": 25,
+      "name": "Thumper Bumper Middle"
+    },
+    {
+      "n": 26,
+      "name": "Thumper Bumper Left"
+    },
+    {
+      "n": 27,
+      "name": "Thumper Bumper Right"
+    },
+    {
+      "n": 28,
+      "name": "Slingshot Left"
+    },
+    {
+      "n": 29,
+      "name": "Slingshot Right"
+    },
+    {
+      "n": 31,
+      "name": "Saucer Right"
+    },
+    {
+      "n": 32,
+      "name": "Out Ball Left-5"
+    },
+    {
+      "n": 33,
+      "name": "Out Ball 4"
+    },
+    {
+      "n": 34,
+      "name": "Out Ball 3"
+    },
+    {
+      "n": 35,
+      "name": "Out Ball 2"
+    },
+    {
+      "n": 36,
+      "name": "Out Ball Right-1"
+    },
+    {
+      "n": 37,
+      "name": "Lower Lab L"
+    },
+    {
+      "n": 38,
+      "name": "Lower Lab A"
+    },
+    {
+      "n": 39,
+      "name": "Lower Lab B"
+    },
+    {
+      "n": 40,
+      "name": "Brain Rollover Left"
+    },
+    {
+      "n": 41,
+      "name": "Brain Rollover Right"
+    },
+    {
+      "n": 42,
+      "name": "Unload Ball Lane"
+    },
+    {
+      "n": 43,
+      "name": "Load Ball Lane"
+    },
+    {
+      "n": 44,
+      "name": "Rebound"
+    },
+    {
+      "n": 45,
+      "name": "Upper Lab L"
+    },
+    {
+      "n": 46,
+      "name": "Upper Lab A"
+    },
+    {
+      "n": 47,
+      "name": "Upper Lab B"
+    }
+  ],
+  "solenoids": [
+    {
+      "n": 1,
+      "name": "Thumper bumper middle"
+    },
+    {
+      "n": 2,
+      "name": "Thumper bumper left"
+    },
+    {
+      "n": 3,
+      "name": "Thumper bumper right"
+    },
+    {
+      "n": 4,
+      "name": "Left slingshot"
+    },
+    {
+      "n": 5,
+      "name": "Right slingshot"
+    },
+    {
+      "n": 6,
+      "name": "Power Saver (left kicker post)"
+    },
+    {
+      "n": 8,
+      "name": "Right saucer"
+    },
+    {
+      "n": 9,
+      "name": "Open atom smasher"
+    },
+    {
+      "n": 10,
+      "name": "Close atom smasher"
+    },
+    {
+      "n": 11,
+      "name": "Out kicker (trough to shooter)"
+    },
+    {
+      "n": 12,
+      "name": "German use"
+    },
+    {
+      "n": 13,
+      "name": "Outhole kicker"
+    },
+    {
+      "n": 14,
+      "name": "Knocker"
+    },
+    {
+      "n": 15,
+      "name": "Neon topper (on/off)"
+    },
+    {
+      "n": 16,
+      "name": "Backbox light (on/off)"
+    }
+  ],
+  "lamps": [
+    {
+      "n": 0,
+      "name": "Strange S"
+    },
+    {
+      "n": 1,
+      "name": "Strange A"
+    },
+    {
+      "n": 2,
+      "name": "Strange E"
+    },
+    {
+      "n": 3,
+      "name": "Volts 200V"
+    },
+    {
+      "n": 4,
+      "name": "Volts 500V"
+    },
+    {
+      "n": 5,
+      "name": "Volts 800V"
+    },
+    {
+      "n": 6,
+      "name": "Atom Sm Arrow"
+    },
+    {
+      "n": 7,
+      "name": "Anti Gravity"
+    },
+    {
+      "n": 8,
+      "name": "Load Atoms Left"
+    },
+    {
+      "n": 9,
+      "name": "Thumper Bumper Right"
+    },
+    {
+      "n": 10,
+      "name": "Play Mult 9X"
+    },
+    {
+      "n": 11,
+      "name": "Atomic Gen"
+    },
+    {
+      "n": 12,
+      "name": "A.G. Exit"
+    },
+    {
+      "n": 13,
+      "name": "Volts"
+    },
+    {
+      "n": 14,
+      "name": "Bubble 15K Left"
+    },
+    {
+      "n": 16,
+      "name": "Strange T"
+    },
+    {
+      "n": 17,
+      "name": "Strange N"
+    },
+    {
+      "n": 18,
+      "name": "Saver On"
+    },
+    {
+      "n": 19,
+      "name": "Volts 300V"
+    },
+    {
+      "n": 20,
+      "name": "Volts 600V"
+    },
+    {
+      "n": 21,
+      "name": "Volts 900V"
+    },
+    {
+      "n": 22,
+      "name": "Spark Bonus"
+    },
+    {
+      "n": 23,
+      "name": "Spsa"
+    },
+    {
+      "n": 24,
+      "name": "Thumper Bumper Middle"
+    },
+    {
+      "n": 25,
+      "name": "Play Mult 3X"
+    },
+    {
+      "n": 26,
+      "name": "Play Mult 12X"
+    },
+    {
+      "n": 27,
+      "name": "Atom Top"
+    },
+    {
+      "n": 28,
+      "name": "Spark 75K"
+    },
+    {
+      "n": 29,
+      "name": "Bubble 5K Left"
+    },
+    {
+      "n": 30,
+      "name": "Bubble 25K Left"
+    },
+    {
+      "n": 32,
+      "name": "Strange R"
+    },
+    {
+      "n": 33,
+      "name": "Strange G"
+    },
+    {
+      "n": 34,
+      "name": "Volts 100V"
+    },
+    {
+      "n": 35,
+      "name": "Volts 400V"
+    },
+    {
+      "n": 36,
+      "name": "Volts 700V"
+    },
+    {
+      "n": 37,
+      "name": "Collect Bonus"
+    },
+    {
+      "n": 38,
+      "name": "Load Atoms Right"
+    },
+    {
+      "n": 39,
+      "name": "Hold Bonus"
+    },
+    {
+      "n": 40,
+      "name": "Thumper Bumper Left"
+    },
+    {
+      "n": 41,
+      "name": "Play Mult 6X"
+    },
+    {
+      "n": 42,
+      "name": "Particle Sep"
+    },
+    {
+      "n": 43,
+      "name": "Spark 25K"
+    },
+    {
+      "n": 44,
+      "name": "Particle Right"
+    },
+    {
+      "n": 45,
+      "name": "Bubble 10K Left"
+    },
+    {
+      "n": 46,
+      "name": "Ball Kicker"
+    },
+    {
+      "n": 48,
+      "name": "Science S"
+    },
+    {
+      "n": 49,
+      "name": "Science E(1)"
+    },
+    {
+      "n": 50,
+      "name": "Science E(2)"
+    },
+    {
+      "n": 51,
+      "name": "Bonus 2K"
+    },
+    {
+      "n": 52,
+      "name": "Bonus 5K"
+    },
+    {
+      "n": 53,
+      "name": "Bonus 8K"
+    },
+    {
+      "n": 54,
+      "name": "Bonus 20K"
+    },
+    {
+      "n": 55,
+      "name": "Bonus 50K"
+    },
+    {
+      "n": 56,
+      "name": "Bonus Mult 2X"
+    },
+    {
+      "n": 57,
+      "name": "Bonus Mult 5X"
+    },
+    {
+      "n": 58,
+      "name": "Lab A"
+    },
+    {
+      "n": 59,
+      "name": "Back Right"
+    },
+    {
+      "n": 60,
+      "name": "Atom Bottom"
+    },
+    {
+      "n": 61,
+      "name": "Back Middle"
+    },
+    {
+      "n": 62,
+      "name": "Bubble 15K Right"
+    },
+    {
+      "n": 64,
+      "name": "Science C(1)"
+    },
+    {
+      "n": 65,
+      "name": "Science N"
+    },
+    {
+      "n": 66,
+      "name": "Special"
+    },
+    {
+      "n": 67,
+      "name": "Bonus 3K"
+    },
+    {
+      "n": 68,
+      "name": "Bonus 6K"
+    },
+    {
+      "n": 69,
+      "name": "Bonus 9K"
+    },
+    {
+      "n": 70,
+      "name": "Bonus 30K"
+    },
+    {
+      "n": 71,
+      "name": "Brain Left"
+    },
+    {
+      "n": 72,
+      "name": "Bonus Mult 3X"
+    },
+    {
+      "n": 73,
+      "name": "Bonus Mult 6X"
+    },
+    {
+      "n": 74,
+      "name": "Lab B"
+    },
+    {
+      "n": 75,
+      "name": "Back Left"
+    },
+    {
+      "n": 76,
+      "name": "A.G. Entrance"
+    },
+    {
+      "n": 77,
+      "name": "Bubble 5K Right"
+    },
+    {
+      "n": 78,
+      "name": "Bubble 25K Right"
+    },
+    {
+      "n": 80,
+      "name": "Science I"
+    },
+    {
+      "n": 81,
+      "name": "Science C(2)"
+    },
+    {
+      "n": 82,
+      "name": "Bonus 1K"
+    },
+    {
+      "n": 83,
+      "name": "Bonus 4K"
+    },
+    {
+      "n": 84,
+      "name": "Bonus 7K"
+    },
+    {
+      "n": 85,
+      "name": "Bonus 10K"
+    },
+    {
+      "n": 86,
+      "name": "Bonus 40K"
+    },
+    {
+      "n": 87,
+      "name": "Brain Right"
+    },
+    {
+      "n": 88,
+      "name": "Bonus Mult 4X"
+    },
+    {
+      "n": 89,
+      "name": "Lab L"
+    },
+    {
+      "n": 90,
+      "name": "Matter Trans"
+    },
+    {
+      "n": 91,
+      "name": "Spark 50K"
+    },
+    {
+      "n": 92,
+      "name": "Particle Left"
+    },
+    {
+      "n": 93,
+      "name": "Bubble 10K Right"
+    },
+    {
+      "n": 94,
+      "name": "Extra Ball"
+    }
+  ],
+  "sounds": [
+    {
+      "n": 1,
+      "name": "Ding"
+    },
+    {
+      "n": 16,
+      "name": "Sin wave drone background"
+    },
+    {
+      "n": 17,
+      "name": "Background 2"
+    },
+    {
+      "n": 18,
+      "name": "Background 3"
+    },
+    {
+      "n": 19,
+      "name": "Background 4"
+    },
+    {
+      "n": 20,
+      "name": "Background 5"
+    },
+    {
+      "n": 21,
+      "name": "Background 6"
+    },
+    {
+      "n": 22,
+      "name": "Background 7"
+    },
+    {
+      "n": 23,
+      "name": "Background 8"
+    },
+    {
+      "n": 24,
+      "name": "Background 9"
+    },
+    {
+      "n": 25,
+      "name": "Atom smasher loaded with a ball"
+    },
+    {
+      "n": 26,
+      "name": "Fast building sequence bubbles popping?"
+    },
+    {
+      "n": 27,
+      "name": "Slow building sequence bubbles?"
+    },
+    {
+      "n": 28,
+      "name": "Slower building sequence"
+    },
+    {
+      "n": 29,
+      "name": "More Slower building sequence"
+    },
+    {
+      "n": 30,
+      "name": "Multiball start"
+    },
+    {
+      "n": 33,
+      "name": "Monkey brain transfer"
+    },
+    {
+      "n": 34,
+      "name": "Spark zap"
+    },
+    {
+      "n": 35,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 36,
+      "name": "Quiet"
+    },
+    {
+      "n": 37,
+      "name": "Quiet"
+    },
+    {
+      "n": 38,
+      "name": "Quiet"
+    },
+    {
+      "n": 39,
+      "name": "Tilt"
+    },
+    {
+      "n": 40,
+      "name": "Quiet"
+    },
+    {
+      "n": 43,
+      "name": "Ball missing sound"
+    },
+    {
+      "n": 44,
+      "name": "Clap"
+    },
+    {
+      "n": 48,
+      "name": "Sonic ray"
+    },
+    {
+      "n": 49,
+      "name": "Boing up"
+    },
+    {
+      "n": 50,
+      "name": "Boing up again"
+    },
+    {
+      "n": 51,
+      "name": "Sonic down"
+    },
+    {
+      "n": 52,
+      "name": "Sonic base"
+    },
+    {
+      "n": 53,
+      "name": "Same as 51"
+    },
+    {
+      "n": 54,
+      "name": "Sonic transport"
+    },
+    {
+      "n": 55,
+      "name": "Longer sonic transport"
+    },
+    {
+      "n": 56,
+      "name": "Boing"
+    },
+    {
+      "n": 57,
+      "name": "Deeya"
+    },
+    {
+      "n": 58,
+      "name": "Failed match?"
+    },
+    {
+      "n": 59,
+      "name": "Sonic ray gun"
+    },
+    {
+      "n": 60,
+      "name": "Coin drop"
+    },
+    {
+      "n": 61,
+      "name": "Coin drop 2"
+    },
+    {
+      "n": 62,
+      "name": "Coin drop 3 could be 3 player"
+    },
+    {
+      "n": 63,
+      "name": "4 player"
+    },
+    {
+      "n": 65,
+      "name": "Background drone"
+    },
+    {
+      "n": 69,
+      "name": "Explosion"
+    },
+    {
+      "n": 70,
+      "name": "Low sonic bass"
+    },
+    {
+      "n": 71,
+      "name": "Doo deee daa when an atom is hit out of "
+    },
+    {
+      "n": 72,
+      "name": "Anti gravity"
+    },
+    {
+      "n": 73,
+      "name": "Bubbles bonus"
+    },
+    {
+      "n": 74,
+      "name": "Collect bonus from the saucer"
+    },
+    {
+      "n": 75,
+      "name": "Anti gravity"
+    },
+    {
+      "n": 76,
+      "name": "Anti gravity complete"
+    },
+    {
+      "n": 77,
+      "name": "Doo whip"
+    },
+    {
+      "n": 79,
+      "name": "Dow whip"
+    },
+    {
+      "n": 80,
+      "name": "Spark bonus zap"
+    },
+    {
+      "n": 81,
+      "name": "Low zap"
+    },
+    {
+      "n": 83,
+      "name": "Low guitar"
+    },
+    {
+      "n": 84,
+      "name": "Med guitar"
+    },
+    {
+      "n": 85,
+      "name": "High guitar"
+    },
+    {
+      "n": 86,
+      "name": "Low guitar"
+    },
+    {
+      "n": 87,
+      "name": "Med high guitar"
+    },
+    {
+      "n": 88,
+      "name": "Strange science voice"
+    },
+    {
+      "n": 89,
+      "name": "Engine"
+    },
+    {
+      "n": 90,
+      "name": "Bow whip"
+    },
+    {
+      "n": 91,
+      "name": "Chirp"
+    },
+    {
+      "n": 92,
+      "name": "Click"
+    },
+    {
+      "n": 93,
+      "name": "Multi ball in play loop 1"
+    },
+    {
+      "n": 94,
+      "name": "Multi ball in play loop 2"
+    },
+    {
+      "n": 95,
+      "name": "Multi ball in play loop 3"
+    },
+    {
+      "n": 96,
+      "name": "Low saw"
+    },
+    {
+      "n": 97,
+      "name": "Guitar rif 1 loop"
+    },
+    {
+      "n": 98,
+      "name": "Science voice"
+    },
+    {
+      "n": 99,
+      "name": "Strange voice"
+    },
+    {
+      "n": 100,
+      "name": "Game over matched"
+    },
+    {
+      "n": 101,
+      "name": "Guitar chord"
+    },
+    {
+      "n": 102,
+      "name": "Monkey squeek"
+    },
+    {
+      "n": 103,
+      "name": "Match countdown"
+    },
+    {
+      "n": 104,
+      "name": "Monkey hoo hoo ha"
+    },
+    {
+      "n": 105,
+      "name": "Monkey hoo hoo 2"
+    },
+    {
+      "n": 106,
+      "name": "Letter hit"
+    },
+    {
+      "n": 107,
+      "name": "Ball locked in atom smasher"
+    },
+    {
+      "n": 108,
+      "name": "Strange strange strange voice"
+    },
+    {
+      "n": 109,
+      "name": "Science science science voice"
+    },
+    {
+      "n": 110,
+      "name": "Guitar rif 3"
+    },
+    {
+      "n": 111,
+      "name": "Strange science x3 voice"
+    },
+    {
+      "n": 112,
+      "name": "Evil laugh 1"
+    },
+    {
+      "n": 113,
+      "name": "Evil laugh down"
+    },
+    {
+      "n": 114,
+      "name": "Extra ball"
+    },
+    {
+      "n": 115,
+      "name": "Double guitar chord"
+    },
+    {
+      "n": 116,
+      "name": "Triple guitar chord"
+    },
+    {
+      "n": 117,
+      "name": "Single guitar chord"
+    },
+    {
+      "n": 118,
+      "name": "Girl laugh up"
+    },
+    {
+      "n": 119,
+      "name": "Match sequence"
+    },
+    {
+      "n": 120,
+      "name": "Match and evil laugh"
+    },
+    {
+      "n": 121,
+      "name": "Extra ball"
+    },
+    {
+      "n": 123,
+      "name": "Shoot again after a ball locked"
+    },
+    {
+      "n": 124,
+      "name": "Ball shot out of atom smasher"
+    },
+    {
+      "n": 126,
+      "name": "Girl sound?"
+    },
+    {
+      "n": 127,
+      "name": "Monkey laugh"
+    },
+    {
+      "n": 136,
+      "name": "Tilt warning?"
+    },
+    {
+      "n": 144,
+      "name": "Gun fire?"
+    },
+    {
+      "n": 152,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 160,
+      "name": "Tilt warning with a woop woop"
+    },
+    {
+      "n": 168,
+      "name": "Tilt warning with woop woop"
+    },
+    {
+      "n": 176,
+      "name": "Tilt warning with woop woop"
+    },
+    {
+      "n": 184,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 192,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 200,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 208,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 210,
+      "name": "Spark bonus"
+    },
+    {
+      "n": 216,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 224,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 232,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 248,
+      "name": "Tilt warning"
+    },
+    {
+      "n": 255,
+      "name": "Stop all sounds"
+    }
+  ],
+  "settings": [
+    {
+      "id": "free-play",
+      "index": 0,
+      "name": "Free play",
+      "group": "pricing",
+      "type": "bool",
+      "default": 1,
+      "source": {
+        "eeprom": 141,
+        "variable": "FreePlay"
+      }
+    },
+    {
+      "id": "balls-per-game",
+      "index": 1,
+      "name": "Balls per game",
+      "group": "game",
+      "type": "int",
+      "min": 3,
+      "max": 5,
+      "default": 3,
+      "difficulty": true,
+      "source": {
+        "eeprom": 142,
+        "variable": "BallsPerGame"
+      }
+    },
+    {
+      "id": "credit-limit",
+      "index": 2,
+      "name": "Credit limit",
+      "group": "pricing",
+      "type": "int",
+      "min": 1,
+      "max": 40,
+      "default": 20,
+      "source": {
+        "eeprom": 143,
+        "variable": "MaxCredits"
+      }
+    },
+    {
+      "id": "replay-score-1",
+      "index": 3,
+      "name": "First replay",
+      "group": "awards",
+      "type": "score",
+      "min": 0,
+      "max": 9999000,
+      "step": 1000,
+      "default": 1500000,
+      "source": {
+        "eeprom": 144,
+        "variable": "Replay1"
+      }
+    },
+    {
+      "id": "replay-score-2",
+      "index": 4,
+      "name": "Second replay",
+      "group": "awards",
+      "type": "score",
+      "min": 0,
+      "max": 9999000,
+      "step": 1000,
+      "default": 3500000,
+      "source": {
+        "eeprom": 148,
+        "variable": "Replay2"
+      }
+    },
+    {
+      "id": "high-score-replays",
+      "index": 5,
+      "name": "Replays for the high score",
+      "group": "awards",
+      "type": "int",
+      "min": 0,
+      "max": 3,
+      "default": 3,
+      "source": {
+        "eeprom": 152,
+        "variable": "HighScoreReplays"
+      }
+    },
+    {
+      "id": "match",
+      "index": 6,
+      "name": "Match",
+      "group": "features",
+      "type": "bool",
+      "default": 1,
+      "source": {
+        "eeprom": 153,
+        "variable": "MatchOn"
+      }
+    },
+    {
+      "id": "tilt-warnings",
+      "index": 7,
+      "name": "Tilt warnings",
+      "group": "game",
+      "type": "int",
+      "min": 0,
+      "max": 3,
+      "default": 2,
+      "difficulty": true,
+      "source": {
+        "eeprom": 154,
+        "variable": "MaxTiltWarnings"
+      }
+    },
+    {
+      "id": "slingshots",
+      "index": 8,
+      "name": "Slingshots",
+      "group": "game",
+      "type": "bool",
+      "default": 1,
+      "difficulty": true,
+      "source": {
+        "eeprom": 155,
+        "variable": "SlingsOn"
+      }
+    },
+    {
+      "id": "award-count",
+      "index": 9,
+      "name": "Award count",
+      "group": "game",
+      "type": "enum",
+      "values": [
+        {
+          "v": 0,
+          "label": "6/7/8 completions"
+        },
+        {
+          "v": 1,
+          "label": "5/6/7 completions"
+        },
+        {
+          "v": 2,
+          "label": "4/5/6 completions"
+        },
+        {
+          "v": 3,
+          "label": "3/4/5 completions"
+        }
+      ],
+      "default": 3,
+      "difficulty": true,
+      "source": {
+        "eeprom": 156,
+        "variable": "AwardCount"
+      }
+    },
+    {
+      "id": "extra-ball-timer",
+      "index": 10,
+      "name": "Smash's Extra Ball timer",
+      "group": "game",
+      "type": "enum",
+      "values": [
+        {
+          "v": 0,
+          "label": "8 s"
+        },
+        {
+          "v": 1,
+          "label": "16 s"
+        },
+        {
+          "v": 2,
+          "label": "32 s"
+        }
+      ],
+      "default": 2,
+      "difficulty": true,
+      "source": {
+        "eeprom": 157,
+        "variable": "ExtraBallTimerMs"
+      }
+    },
+    {
+      "id": "special-timer",
+      "index": 11,
+      "name": "STRANGE SCIENCE Special timer",
+      "group": "game",
+      "type": "enum",
+      "values": [
+        {
+          "v": 0,
+          "label": "8 s"
+        },
+        {
+          "v": 1,
+          "label": "16 s"
+        },
+        {
+          "v": 2,
+          "label": "32 s"
+        },
+        {
+          "v": 3,
+          "label": "To the end of the ball"
+        }
+      ],
+      "default": 2,
+      "difficulty": true,
+      "source": {
+        "eeprom": 158,
+        "variable": "SpecialTimerMs"
+      }
+    },
+    {
+      "id": "power-saver",
+      "index": 12,
+      "name": "Power Saver at a ball's start",
+      "group": "game",
+      "type": "enum",
+      "values": [
+        {
+          "v": 0,
+          "label": "Ball 1"
+        },
+        {
+          "v": 1,
+          "label": "Only when earned"
+        },
+        {
+          "v": 2,
+          "label": "Every ball"
+        }
+      ],
+      "default": 0,
+      "difficulty": true,
+      "source": {
+        "eeprom": 159,
+        "variable": "SaverMode"
+      }
+    },
+    {
+      "id": "coins-per-credit-1",
+      "index": 13,
+      "name": "Coins per credit, chute 1",
+      "group": "pricing",
+      "type": "enum",
+      "values": [
+        {
+          "v": 0,
+          "label": "1 coin / 5 credits"
+        },
+        {
+          "v": 1,
+          "label": "1 coin / 4 credits"
+        },
+        {
+          "v": 2,
+          "label": "1 coin / 3 credits"
+        },
+        {
+          "v": 3,
+          "label": "1 coin / 2 credits"
+        },
+        {
+          "v": 4,
+          "label": "1 coin / 1 credit"
+        },
+        {
+          "v": 5,
+          "label": "2 coins / 3 credits"
+        },
+        {
+          "v": 6,
+          "label": "2 coins / 1 credit"
+        },
+        {
+          "v": 7,
+          "label": "3 coins / 1 credit"
+        },
+        {
+          "v": 8,
+          "label": "4 coins / 1 credit"
+        }
+      ],
+      "default": 4,
+      "source": {
+        "eeprom": 50,
+        "variable": "SettingValue[13]"
+      }
+    },
+    {
+      "id": "coins-per-credit-2",
+      "index": 14,
+      "name": "Coins per credit, chute 2",
+      "group": "pricing",
+      "type": "enum",
+      "values": [
+        {
+          "v": 0,
+          "label": "1 coin / 5 credits"
+        },
+        {
+          "v": 1,
+          "label": "1 coin / 4 credits"
+        },
+        {
+          "v": 2,
+          "label": "1 coin / 3 credits"
+        },
+        {
+          "v": 3,
+          "label": "1 coin / 2 credits"
+        },
+        {
+          "v": 4,
+          "label": "1 coin / 1 credit"
+        },
+        {
+          "v": 5,
+          "label": "2 coins / 3 credits"
+        },
+        {
+          "v": 6,
+          "label": "2 coins / 1 credit"
+        },
+        {
+          "v": 7,
+          "label": "3 coins / 1 credit"
+        },
+        {
+          "v": 8,
+          "label": "4 coins / 1 credit"
+        }
+      ],
+      "default": 4,
+      "source": {
+        "eeprom": 51,
+        "variable": "SettingValue[14]"
+      }
+    },
+    {
+      "id": "coins-per-credit-3",
+      "index": 15,
+      "name": "Coins per credit, chute 3",
+      "group": "pricing",
+      "type": "enum",
+      "values": [
+        {
+          "v": 0,
+          "label": "1 coin / 5 credits"
+        },
+        {
+          "v": 1,
+          "label": "1 coin / 4 credits"
+        },
+        {
+          "v": 2,
+          "label": "1 coin / 3 credits"
+        },
+        {
+          "v": 3,
+          "label": "1 coin / 2 credits"
+        },
+        {
+          "v": 4,
+          "label": "1 coin / 1 credit"
+        },
+        {
+          "v": 5,
+          "label": "2 coins / 3 credits"
+        },
+        {
+          "v": 6,
+          "label": "2 coins / 1 credit"
+        },
+        {
+          "v": 7,
+          "label": "3 coins / 1 credit"
+        },
+        {
+          "v": 8,
+          "label": "4 coins / 1 credit"
+        }
+      ],
+      "default": 4,
+      "source": {
+        "eeprom": 52,
+        "variable": "SettingValue[15]"
+      }
+    }
+  ],
+  "audits": [
+    {
+      "id": "total-plays",
+      "index": 0,
+      "name": "Total plays"
+    },
+    {
+      "id": "chute-1-coins",
+      "index": 1,
+      "name": "Chute 1 coins"
+    },
+    {
+      "id": "chute-2-coins",
+      "index": 2,
+      "name": "Chute 2 coins"
+    },
+    {
+      "id": "chute-3-coins",
+      "index": 3,
+      "name": "Chute 3 coins"
+    },
+    {
+      "id": "total-replays",
+      "index": 4,
+      "name": "Total replays"
+    },
+    {
+      "id": "high-score-beaten",
+      "index": 5,
+      "name": "High score beaten"
+    }
+  ],
+  "actions": [
+    {
+      "id": "sound-test",
+      "index": 0,
+      "name": "Sound test",
+      "kind": "test",
+      "arg": {
+        "min": 1,
+        "max": 255,
+        "label": "Sound code"
+      },
+      "valueList": "sounds",
+      "valueLabel": "Sound",
+      "local": true
+    },
+    {
+      "id": "lamp-test",
+      "index": 1,
+      "name": "Lamp test",
+      "kind": "test",
+      "arg": {
+        "min": 0,
+        "max": 95,
+        "label": "Lamp"
+      },
+      "valueList": "lamps",
+      "valueLabel": "Lamp",
+      "local": true
+    },
+    {
+      "id": "solenoid-test",
+      "index": 2,
+      "name": "Coil test",
+      "kind": "test",
+      "arg": {
+        "min": 0,
+        "max": 16,
+        "label": "Coil"
+      },
+      "valueList": "solenoids",
+      "valueLabel": "Coil",
+      "confirm": true,
+      "local": true
+    },
+    {
+      "id": "switch-test",
+      "index": 3,
+      "name": "Switch test",
+      "kind": "test",
+      "valueLabel": "Closures",
+      "local": true
+    },
+    {
+      "id": "display-test",
+      "index": 4,
+      "name": "Display test",
+      "kind": "test",
+      "arg": {
+        "min": 0,
+        "max": 2,
+        "label": "0 segments, 1 letters, 2 digits"
+      },
+      "valueLabel": "Pattern",
+      "local": true
+    },
+    {
+      "id": "stop-sounds",
+      "index": 5,
+      "name": "Stop all sounds",
+      "kind": "oneshot"
+    },
+    {
+      "id": "enter-diagnostics",
+      "index": 6,
+      "name": "Enter diagnostics",
+      "kind": "oneshot",
+      "local": true,
+      "diagnostics": "enter"
+    },
+    {
+      "id": "exit-diagnostics",
+      "index": 7,
+      "name": "Exit diagnostics",
+      "kind": "oneshot",
+      "local": true,
+      "diagnostics": "exit"
+    },
+    {
+      "id": "reset-high-scores",
+      "index": 8,
+      "name": "Reset high scores",
+      "kind": "oneshot",
+      "confirm": true,
+      "local": true
+    },
+    {
+      "id": "clear-audits",
+      "index": 9,
+      "name": "Clear all audits",
+      "kind": "oneshot",
+      "confirm": true,
+      "local": true,
+      "valueLabel": "Plays before"
+    }
+  ]
+}
